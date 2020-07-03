@@ -8,5 +8,11 @@
             <app-warning></app-warning>
             <app-success></app-success>
         </div>
+        <hr>
     </div>
+    <hr>
+    <label for="">Username</label>
+    <input type="text" class="form-control" [(ngModel)]='username'>
+    <p>{{ username }}</p>
+    <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset User</button>
 </div>
